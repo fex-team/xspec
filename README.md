@@ -1,2 +1,2 @@
-wcspec
+X-Spec
 ======
