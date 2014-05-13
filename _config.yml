@@ -1,0 +1,4 @@
+name: X-Spec
+markdown: redcarpet
+pygments: true
+directory: /xspec

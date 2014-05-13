@@ -1,0 +1,34 @@
+---
+layout: spec
+title: X-SPEC - 让WEB组件更通用
+nav: spec
+---
+
+<div class="page-header">
+    <h2>通用约定</h2>
+</div>
+
+{{content}}
+
+<div class="callout callout-info">
+    <h4>可关联 <code>target</code> 组件</h4>
+    <table class="table table-hover">
+    <tr>
+        <th>组件名</th>
+        <th>关联行为</th>
+    </tr>
+    {% for spec in site.data.spec_mobile %}
+        
+    <tr>
+    {% if spec.target-receive %}
+
+    <td><a href="{{ site.directory }}/specs/{{ spec.id }}.html">{{ spec.name }}</td>
+    <td>{{ spec.target-receive }}</td>
+
+    {% endif %}
+        
+    </tr>
+    {% endfor %}
+    </table>
+</div>
+

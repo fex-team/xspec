@@ -1,0 +1,69 @@
+---
+layout: spec
+---
+<div class="page-header">
+
+{% for spec in site.data.spec_mobile %}
+    {% if spec.id == page.spec_id %}
+    <h1>&lt;x-{{spec.id}}&gt; <small>{{ spec.version }}</small></h1>
+    {% endif %}
+{% endfor %}
+
+</div>
+
+<div class="callout callout-info">
+    <h4>说明</h4>
+    <p>
+        {% for spec in site.data.spec_mobile %}
+            {% if spec.id == page.spec_id %}
+
+            {{ spec.summary }}
+
+            {% endif %}
+        {% endfor %}
+    </p>
+    {% for spec in site.data.spec_mobile %}
+        {% if spec.id == page.spec_id %}
+
+        {% if spec.detail %}
+        <p>
+        {{ spec.detail }}
+        </p>
+        {% endif %}
+
+        {% endif %}
+    {% endfor %}
+    
+    {% for spec in site.data.spec_mobile %}
+        {% if spec.id == page.spec_id %}
+
+        {% if spec.container %}
+        {% assign containers = spec.container|split:"," %}
+        <p>
+        该标签只能出现在以下标签内部：
+        {% for item in containers %}
+          <a href="{{ site.directory }}/specs/{{ item }}.html">{{ item }}</a>
+        {% endfor %}
+        </p>
+        {% endif %}
+
+        {% endif %}
+
+        {% if spec.container %}
+        {% assign containers = spec.container|split:"," %}
+        {% for item in containers %}
+        {% if item == page.spec_id %}
+        <p>
+        配合以下子标签使用：
+          <a href="{{ site.directory }}/specs/{{ spec.id }}.html">{{ spec.id }}</a>
+        </p>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+{{content}}
+
+
+

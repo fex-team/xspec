@@ -1,0 +1,18 @@
+---
+layout: inner
+title: X-SPEC - 让WEB组件更通用
+nav: spec
+---
+
+<div id="spec-main">
+
+    {% for spec in site.data.spec_mobile %}
+        {% if spec.id == page.spec_id and spec.demo %}
+        <img class="imgdemo" src="{{ site.directory }}/img/demo/{{ spec.id }}.{{ spec.demo }}"/>
+        {% endif %}
+    {% endfor %}
+
+    {{content}}
+
+</div>
+

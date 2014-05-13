@@ -1,0 +1,27 @@
+- id: common
+  name: 通用约定
+  summary: 组件标签名、属性名、事件名以及数据解析协议等所有组件通用的约定。
+  version: 0.0.1
+
+- id: json
+  name: JSON
+  summary: 输出 JSON 格式数据，并允许通过 Javascript 操作数据，通常作为其他组件的数据源。
+  version: 0.0.1
+
+- id: ajax
+  name: Ajax
+  summary: 向服务器端发送 ajax 请求获取数据，通常作为其他组件的数据源。
+  version: 0.0.1
+  detail: 相当于为 <code>XMLHttpRequest</code> 提供了标签式的接口访问。
+
+- id: model
+  name: Model
+  summary: 以 ajax 或 json 标签为数据源进行二次处理，通常作为其他组件的数据源。
+  version: 0.0.1
+  detail: 当前每个 model 标签只允许包含一个数据源。
+
+- id: template
+  name: Template
+  summary: 前端模板标签，通常结合数据源为组件动态输出内容。
+  version: 0.0.1
+  detail: 前端模板需要配合数据源使用，语法规则参考 <a href="https://github.com/janl/mustache.js">Mustache</a>
