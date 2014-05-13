@@ -1,0 +1,100 @@
+  # 组件ID，用于页面URL以及组件识别
+- id: panel
+  # 组件名称，用于页面显示
+  name: Panel
+  # 概要
+  summary: 侧边栏组件，通常用于显示额外的内容并在需要时从侧边显示。
+  # 详细描述
+  detail: 
+  # 版本
+  version: 0.0.1
+  # demo 图片格式
+  demo: gif
+  # 接收target事件以及接收后的行为
+  target-receive: toggle
+
+- id: slider
+  name: Slider
+  summary: 图片轮播组件，可实现图片集合的轮播功能。
+  detail: 支持通过数据源和模板来自定义内容。
+  version: 0.0.1
+  demo: gif
+  target-receive: switch
+
+- id: toggle
+  name: Toggle
+  summary: 开关组件，可切换两种状态的按钮，相当于传统的Chekcbox。
+  detail: 
+  version: 0.0.1
+  demo: gif
+
+- id: appbar
+  name: App Bar
+  summary: 移动应用的顶栏，一般用于添加标题和操作按钮。
+  detail: appbar 本身功能比较单一，但是结合 button 等组件可以构建更强大的导航功能。
+  version: 0.0.1
+  demo: gif
+
+- id: tabbar
+  name: Tab Bar
+  summary: 移动应用的底栏，一般用于切换应用的整页内容区块。
+  detail: 底栏通常需要固定在视口底部，通过配置可以为每个Tab指定不同的图标。
+  version: 0.0.1
+  demo: gif
+
+- id: tabbar-item
+  name: Tab Bar Item
+  summary: tabbar 标签的子元素，描述具体的 tabbar 项。
+  version: 0.0.1
+  #多个container用英文逗号分隔
+  container: tabbar
+  target-emmit: click
+  demo: gif
+
+- id: menu
+  name: Dropmenu
+  summary: 下拉菜单组件，通常处于隐藏态，在需要时显示菜单项。
+  detail: 
+  version: 0.0.1
+  demo: gif
+  target-receive: toggle
+
+- id: menu-item
+  name: Dropmenu Item
+  summary: 下拉菜单选项。
+  detail: 
+  version: 0.0.1
+  demo: gif
+  container: menu
+
+- id: deck
+  name: Deck
+  summary: Deck 组件可以包含多个 Card 组件并可以循环切换Card。
+  detail: 此外，还可以为每个 Card 的切换行为设置不同的动画效果。
+  version: 0.0.1
+  demo: gif
+  target-receive: switch
+
+- id: card
+  name: Card
+  summary: 全屏内容切换组件，是多个全屏内容的集合并可灵活切换。
+  detail: 
+  version: 0.0.1
+  demo: gif
+  container: deck
+
+- id: dialog
+  name: Dialog
+  summary: 对话框组件，通过配置可以展示信息以及丰富的交互功能。
+  detail: 
+  version: 0.0.1
+  target-receive: toggle
+  demo: gif
+
+- id: modal
+  name: Modal
+  summary: 模态页面组件，以全屏方式展现信息并仅提供关闭的操作。
+  detail: 与 dialog 组件相比，modal 组件功能更为单一，只供显示信息。
+  version: 0.0.1
+  demo: gif
+  target-receive: toggle

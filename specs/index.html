@@ -1,0 +1,64 @@
+---
+layout: inner
+title: 规范 - X-SPEC - 让WEB组件更通用
+spec_title: 规范
+spec_subtitle: 通用以及各端组件规范列表
+nav: spec
+---
+
+<div id="scrollable">
+    <div id="content">
+        <div id="home"> 
+            <div class="clearfix">
+            {% if site.data.spec_global %}
+            <div class="page-header">
+              <h2>通用规范</h2>
+            </div>
+            <ul>
+            {% for spec in site.data.spec_global %}
+              <li>
+                <h2><a href="{{ site.directory }}/specs/{{spec.id}}.html">{{spec.name}}</a></h2>
+                  <span>{{spec.summary}}</span>
+              </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            </div>
+
+            <div class="clearfix">
+            {% if site.data.spec_mobile %}
+            <div class="page-header">
+              <h2>移动组件规范</h2>
+            </div>
+            <ul>
+            {% for spec in site.data.spec_mobile %}
+              <li>
+                <h2><a href="{{ site.directory }}/specs/{{spec.id}}.html">{{spec.name}}</a></h2>
+                  <span>{{spec.summary}}</span>
+              </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            </div>
+
+            <div class="clearfix">
+            {% if site.data.spec_pc %}
+            <div class="page-header">
+              <h2>PC组件规范</h2>
+            </div>
+            <ul>
+            {% for spec in site.data.spec_mobile %}
+              <li>
+                <h2><a href="{{ site.directory }}/specs/{{spec.id}}.html">{{spec.name}}</a></h2>
+                  <span>{{spec.summary}}</span>
+              </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            </div>
+
+      </div>
+
+    </div>
+</div>
+

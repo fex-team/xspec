@@ -1,0 +1,43 @@
+---
+layout: spec
+---
+<div class="page-header">
+
+{% for spec in site.data.spec_global %}
+    {% if spec.id == page.spec_id %}
+    <h1>&lt;x-{{spec.id}}&gt; <small>{{ spec.version }}</small></h1>
+    {% endif %}
+{% endfor %}
+
+</div>
+
+<div class="callout callout-info">
+    <h4>说明</h4>
+    <p>
+        {% for spec in site.data.spec_global %}
+            {% if spec.id == page.spec_id %}
+
+            {{ spec.summary }}
+
+            {% endif %}
+        {% endfor %}
+    </p>
+    <p>
+        {% for spec in site.data.spec_global %}
+            {% if spec.id == page.spec_id %}
+
+            {% if spec.detail %}
+            {{ spec.detail }}
+            {% endif %}
+
+            {% endif %}
+        {% endfor %}
+    </p>
+</div>
+
+{{content}}
+
+
+
+
+

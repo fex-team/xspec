@@ -1,0 +1,28 @@
+<div id="sidebar">
+  {% if site.data.spec_global %}
+      <h1>通用规范</h1>
+    {% for spec in site.data.spec_global %}
+      <ul>
+        <li><a href="{{ site.directory }}/specs/{{spec.id}}.html"{% if spec.id==page.spec_id %} class="active"{% endif %}>{{spec.name}}</a></li>
+      </ul>
+    {% endfor %}
+  {% endif %}
+
+  {% if site.data.spec_mobile %}
+      <h1>移动组件规范</h1>
+    {% for spec in site.data.spec_mobile %}
+      <ul>
+        <li><a href="{{ site.directory }}/specs/{{spec.id}}.html"{% if spec.id==page.spec_id %} class="active"{% endif %}>{{spec.name}}</a></li>
+      </ul>
+    {% endfor %}
+  {% endif %}
+
+  {% if site.data.spec_pc %}
+    {% for spec in site.data.spec_pc %}
+      <h1>PC组件规范</h1>
+      <ul>
+        <li><a href="{{ site.directory }}/specs/{{spec.id}}.html"{% if spec.id==page.spec_id %} class="active"{% endif %}>{{spec.name}}</a></li>
+      </ul>
+    {% endfor %}
+  {% endif %}
+</div>

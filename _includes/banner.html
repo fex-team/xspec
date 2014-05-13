@@ -1,0 +1,34 @@
+<div class="banner">
+
+    {% if page.spec_title %}
+        <h2>{{page.spec_title}}</h2>
+        <h3>{{page.spec_subtitle}}</h3>
+    {% endif %}
+
+    {% for spec in site.data.spec_global %}
+        {% if spec.id == page.spec_id %}
+
+            <h2>{{spec.name}}</h2>
+            <h3>{{spec.summary}}</h3>
+
+        {% endif %}
+    {% endfor %}
+
+    {% for spec in site.data.spec_mobile %}
+        {% if spec.id == page.spec_id %}
+
+            <h2>{{spec.name}}</h2>
+            <h3>{{spec.summary}}</h3>
+
+        {% endif %}
+    {% endfor %}
+
+    {% for spec in site.data.spec_pc %}
+        {% if spec.id == page.spec_id %}
+
+            <h2>{{spec.name}}</h2>
+            <h3>{{spec.summary}}</h3>
+
+        {% endif %}
+    {% endfor %}
+</div>
