@@ -1027,7 +1027,8 @@ div[data-twttr-id] iframe {
 }
 
 #scrollable {
-  float: left;
+  /*float: left;*/
+  padding-left: 150px;
 }
 
 #content {
@@ -1045,7 +1046,7 @@ div[data-twttr-id] iframe {
 #content {
   font-size:13px;
   line-height:160%;
-  max-width:750px;
+  /*max-width:750px;*/
 }
 
 #content h1 {
@@ -1113,6 +1114,10 @@ hr {
 
 }
 
+#home{
+  float: left;
+}
+
 #home h1 {
   /*border-bottom:1px solid #919395;*/
   padding-bottom:20px;
@@ -1165,14 +1170,14 @@ hr {
   overflow: hidden;
 }
 
-.clearfix:after {
+/*.clearfix:after {
     content: ".";
     display: block;
     clear: both;
     visibility: hidden;
     line-height: 0;
     height: 0;
-}
+}*/
 
 #spec-main{
   padding-left: 240px;
@@ -1301,8 +1306,54 @@ hr {
     line-height: 14px;
   }
 
+  #scrollable {
+    padding-left: 0;
+  }
+
+
+  #home ul{
+    margin:0;
+  }
+
   #home ul li{
     height: 90px;
     width: 100%;
+  }
+
+  #home .page-header{
+    margin:10px;
+  }
+
+  #spec-main{
+    padding: 10px;
+    width: 100%;
+    /*margin: 20px 60px;*/
+  }
+
+  #spec-main > h2 {
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+    font-size: 15px;
+    border-left: 3px solid #dddddd;
+  }
+
+  #spec-main > h3 {
+    /*margin: 40px 0 10px;*/
+    font-size: 14px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  #spec-main > h3 strong {
+    /*margin: 40px 0 10px;*/
+    font-size: .8em;
+    color: #888;
+  }
+
+  #spec-main .imgdemo {
+    display: none;
+  }
+
+  #spec-main .page-header{
+    display: none;
   }
 }
