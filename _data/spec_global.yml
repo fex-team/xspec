@@ -24,4 +24,4 @@
   name: Template
   summary: 前端模板标签，通常结合数据源为组件动态输出内容。
   version: 0.0.1
-  detail: 前端模板需要配合数据源使用，语法规则参考 <a href="https://github.com/janl/mustache.js">Mustache</a>
+  detail: 前端模板需要配合数据源使用，语法规则参考 <a href="http://www.polymer-project.org/docs/polymer/binding-types.html">Polymer Template</a>

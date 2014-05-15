@@ -22,7 +22,7 @@ spec_id: tabbar-item
 
 当前项的图标类型；
 
-### `icon-pos` **string**
+### `iconPos` **string**
 
 当前项的图标位置；默认值为 `top`
 
