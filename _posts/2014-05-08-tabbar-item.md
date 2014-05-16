@@ -37,13 +37,13 @@ spec_id: tabbar-item
 <!DOCYPE html>
 <html>
     <body>
-        <x-tabbar>
-            <x-tabbar-item icon="home" label="Home" href="#home" active/>
-            <x-tabbar-item icon="person" label="Profile" href="#profile"/>
-            <x-tabbar-item icon="star" label="Favorites" href="#favorites"/>
-            <x-tabbar-item icon="search" label="Search" href="#search"/>
-            <x-tabbar-item icon="gear" label="Settings" href="#settings"/>
-        </x-slider>
+        <w-tabbar>
+            <w-tabbar-item icon="home" label="Home" href="#home" active/>
+            <w-tabbar-item icon="person" label="Profile" href="#profile"/>
+            <w-tabbar-item icon="star" label="Favorites" href="#favorites"/>
+            <w-tabbar-item icon="search" label="Search" href="#search"/>
+            <w-tabbar-item icon="gear" label="Settings" href="#settings"/>
+        </w-slider>
     </body>
 </html>
 ```
