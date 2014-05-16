@@ -19,9 +19,3 @@
   summary: 以 ajax 或 json 标签为数据源进行二次处理，通常作为其他组件的数据源。
   version: 0.0.1
   detail: 当前每个 model 标签只允许包含一个数据源。
-
-- id: template
-  name: Template
-  summary: 前端模板标签，通常结合数据源为组件动态输出内容。
-  version: 0.0.1
-  detail: 前端模板需要配合数据源使用，语法规则参考 <a href="http://www.polymer-project.org/docs/polymer/binding-types.html">Polymer Template</a>
