@@ -19,3 +19,9 @@
   summary: 以 ajax 或 json 标签为数据源进行二次处理，通常作为其他组件的数据源。
   version: 0.0.1
   detail: 当前每个 model 标签只允许包含一个数据源。
+
+- id:  'on'
+  name: 'On'
+  summary: 当组件触发某些事件后，可以通过该标签描述和其他组件的关联关系。
+  version: 0.0.1
+  detail: 通过标签式的方式来描述简单的关联关系可以避免小功能高成本的 Javascript 代码片段。
